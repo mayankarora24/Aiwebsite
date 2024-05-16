@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AetherArc Tech - Welcome</title>
+    <style>
+        /* Resetting default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Inter, sans-serif;
+            background-image: url('pexels-metis-photographer-6651598.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        header {
+            background-image: url('header_image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 200px; /* Adjust the height as needed */
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            flex: 1; /* Take up remaining space */
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-nav-label {
+    cursor: pointer;
+}
+
+.icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.icon::before,
+.icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: transform 0.3s ease;
+}
+
+.icon::before {
+    top: -8px;
+}
+
+.icon::after {
+    bottom: -8px;
+}
+
+.toggle-nav:checked {
+    background-color:  rgba(255, 255, 255, 0.5);
+}
+
+.toggle-nav:checked + .toggle-nav-label .icon::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.toggle-nav:checked + .toggle-nav-label .icon::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+.nav-items {
+    display: none;
+}
+
+.toggle-nav:checked + .toggle-nav-label + .nav-items {
+    display: flex;
+    flex-direction: column;
+    column-width: 50px;
+}
+
+.nav-item-box {
+    margin: 5px 0;
+    display: flex;
+        text-decoration: none;
+        text-align: left;
+         color: #101110;
+        margin: 0 10px;
+        display: inline-block;
+         background-color:  rgba(255, 255, 255, 0.5);
+         padding: 10px 20px;
+         border-radius: 10px;
+         column-gap: 10px;
+    }
+}
+
+ {
+    .toggle-nav {
+        display: none;
+    }
+
+
+    .nav-item-box {
+        margin: 0 10px;
+    }
+}
+        
+
+        .old-container {
+            max-width: 90%; /* Adjusted maximum width */
+            margin: 0 auto;
+            padding: 35px;
+            color: #0b0b0d;
+            text-align: center;
+            margin-top: 150px;
+            margin-bottom: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+            gap: 30px; /* Reduced gap */
+            justify-content: center; /* Center the grid horizontally */
+            margin-top: -250px;
+            margin-bottom: 50px;
+        }
+
+        .box2 {
+            padding: 30px; /* Reduced padding */
+            border-radius: 10px;
+            overflow: hidden; /* Prevents image overflow */
+        }
+
+        .box2 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        .box {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .box-text {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px; /* Adjusted width */
+            margin: auto; /* Center the box horizontally */
+            text-align: left; /* Adjusted text alignment */
+        }
+
+        .box-text h2 {
+            color: #0d120e;
+            margin-top: 20px; /* Reduced margin */
+        }
+
+        .box-text p {
+            color: #0b0b0d;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 80px;
+        }
+
+        .gif-container {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .gif-container img {
+            max-width: 100%; /* Adjusted max-width */
+            border-radius: 10px;
+            margin-bottom: 50px;
+            margin-top: -100px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logoooooa2.png" alt="AetherArc Tech Logo"> <!-- Provide the correct path to your logo image -->
+        </div>
+        <input type="checkbox" id="toggle-nav" class="toggle-nav">
+        <label for="toggle-nav" class="toggle-nav-label">
+            <span class="icon"></span>
+        </label>
+        
+        <div class="nav-items">
+            <div class="nav-item-box"><a href="#" class="nav-item">HOME</a></div>
+            <div class="nav-item-box"><a href="#" class="nav-item">services</a></div>
+            <div class="nav-item-box"><a href="https://forms.gle/TatBMD2Dbbxgko6B9" class="nav-item">connect</a></div>
+        </div>
+        </nav>
+    </header>
+
+    <div class="old-container">
+        <div class="grid-container">
+            <div class="box2">
+                <img src="Real Estate Facebook Video.gif" alt="Image"> 
+            </div>
+
+            <div class="box-text">
+                <h2>"Your trusted partner in technology solutions"</h2>
+                
+                <p>At AetherArc Tech we are dedicated to empowering businesses through cutting-edge B2B solutions and innovative software development. With a relentless focus on technological excellence, we strive to be the driving force behind your company's success in the digital landscape. From streamlining operations to revolutionizing customer experiences, our tailored approach ensures that every solution we deliver is aligned with your unique goals and challenges. Partner with AetherArc Tech today and embark on a transformative journey towards sustained growth and competitiveness.</p>
+            </div>
+        </div>
+    </div>
+    <div class="gif-container">
+        <img src="Black Neon Coming Soon Video.gif" alt="Your GIF">
+    </div>
+
+    <div class="old-container">
+        <div class="grid-container">
+            <div class="box">
+                <h2>B2B Solutions</h2>
+                <ul>
+                    <li>Tailored B2B Solutions: Highlight how your company provides customized business-to-business solutions tailored to the specific needs and goals of your clients</li>
+                    <li>Strategic Partnerships: Emphasize your approach to building long-term strategic partnerships with businesses to drive mutual growth and success.</li>
+                    <li>Industry Expertise: Showcase your deep understanding of various industries and how you leverage this expertise to deliver effective B2B solutions</li>
+                    <li>Innovative Solutions: Highlight your company's commitment to innovation and how you continuously develop new strategies to address evolving business challenges.</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Business Development</h2>
+                <ul>
+                    <li>"Market Expansion Strategies": Showcase your company's expertise in developing and implementing market expansion strategies to help businesses grow and thrive.</li>
+                    <li>"Client Acquisition Solutions": Highlight your proven methods for acquiring new clients and expanding existing client bases through targeted business development initiatives.</li>
+                    <li>"Revenue Optimization": Emphasize your focus on maximizing revenue streams for your clients through strategic business development planning and execution.</li>
+                    <li>"Networking Opportunities": Highlight how your business development services provide valuable networking opportunities for clients to connect with potential partners and stakeholders</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Software Development</h2>
+                <ul>
+                    <li>"Cutting-edge Technology": Highlight your company's use of cutting-edge technologies and tools to develop innovative software solutions tailored to client needs.</li>
+                    <li>"Custom Software Solutions": Emphasize your ability to create custom software solutions that address unique business challenges and drive efficiency and productivity.</li>
+                    <li>"User-Centric Design": Showcase your commitment to user-centric design principles, ensuring that software solutions are intuitive, user-friendly, and aligned with client objectives.</li>
+                    <li>"Agile Development Approach": Highlight your agile development methodology, emphasizing flexibility, collaboration, and rapid iteration to deliver high-quality software products on time and within budget.</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Data Engineering </h2>
+                <ul>
+                    <li>"Data-driven Insights": Highlight your expertise in collecting, analyzing, and interpreting data to provide actionable insights that drive informed decision-making for businesses.</li>
+                    <li>"Data Infrastructure Solutions": Showcase your ability to design and implement robust data infrastructure solutions that enable efficient data management, storage, and retrieval.</li>
+                    <li>"Advanced Analytics": Emphasize your proficiency in advanced analytics techniques, including predictive modeling, machine learning, and artificial intelligence, to uncover valuable insights from data.</li>
+                    <li>"Data Security and Compliance": Highlight your commitment to data security and compliance standards, ensuring that client data is protected and meets regulatory requirements at all times.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="box">
+            <h2>Contact Us</h2>
+            <p>Email: ctxxvee@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
